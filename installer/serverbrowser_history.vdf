@@ -1,0 +1,118 @@
+"Filters"
+{
+	"favorites"
+	{
+		"1"
+		{
+			"name"		"#01 ZOMBIE ESCAPE [EXP x2] | ZGAMING.NET"
+			"address"		"cs.zgaming.net:27015"
+			"createdat"		"1795336795"
+			"appid"		"10"
+			"accountid"		"0"
+		}
+		"2"
+		{
+			"name"		"#02 ZOMBIE PLAGUE LEVELS | ZGAMING.NET"
+			"address"		"cs.zgaming.net:27016"
+			"createdat"		"1795336795"
+			"appid"		"10"
+			"accountid"		"0"
+		}
+		"3"
+		{
+			"name"		"#03 ZOMBIE PLAGUE ARCADE | ZGAMING.NET"
+			"address"		"cs.zgaming.net:27017"
+			"createdat"		"1795336795"
+			"appid"		"10"
+			"accountid"		"0"
+		}
+		"4"
+		{
+			"name"		"#04 MATA AL TRAIDOR TTT | ZGAMING.NET"
+			"address"		"cs.zgaming.net:27018"
+			"createdat"		"1795336795"
+			"appid"		"10"
+			"accountid"		"0"
+		}
+		"5"
+		{
+			"name"		"#06 PUBLICO | ZGAMING.NET"
+			"address"		"cs.zgaming.net:27020"
+			"createdat"		"1795336795"
+			"appid"		"10"
+			"accountid"		"0"
+		}
+		"6"
+		{
+			"name"		"#08 DEATHMATCH FFA +BOTS | ZGAMING.NET"
+			"address"		"cs.zgaming.net:27022"
+			"createdat"		"1795336795"
+			"appid"		"10"
+			"accountid"		"0"
+		}
+		"7"
+		{
+			"name"		"#09 ROCKET LEAGUE 2 | ZGAMING.NET"
+			"address"		"cs.zgaming.net:27023"
+			"createdat"		"1795336795"
+			"appid"		"10"
+			"accountid"		"0"
+		}
+		"8"
+		{
+			"name"		"#10 DEATHRUN | ZGAMING.NET"
+			"address"		"cs.zgaming.net:27024"
+			"createdat"		"1795336795"
+			"appid"		"10"
+			"accountid"		"0"
+		}
+		"9"
+		{
+			"name"		"#11 KREEDZ/BHOP | ZGAMING.NET"
+			"address"		"cs.zgaming.net:27025"
+			"createdat"		"1795336795"
+			"appid"		"10"
+			"accountid"		"0"
+		}
+		"10"
+		{
+			"name"		"#12 TOWER DEFENSE | ZGAMING.NET"
+			"address"		"cs.zgaming.net:27026"
+			"createdat"		"1795336795"
+			"appid"		"10"
+			"accountid"		"0"
+		}
+		"11"
+		{
+			"name"		"#13 HUNGER-GAMES | ZGAMING.NET"
+			"address"		"cs.zgaming.net:27027"
+			"createdat"		"1795336795"
+			"appid"		"10"
+			"accountid"		"0"
+		}
+		"12"
+		{
+			"name"		"#15 ARENA 1v1 | ZGAMING.NET"
+			"address"		"cs.zgaming.net:27029"
+			"createdat"		"1795336795"
+			"appid"		"10"
+			"accountid"		"0"
+		}
+		"13"
+		{
+			"name"		"#16 AUTOMIX | ZGAMING.NET"
+			"address"		"cs.zgaming.net:27030"
+			"createdat"		"1795336795"
+			"appid"		"10"
+			"accountid"		"0"
+		}
+		"14"
+		{
+			"name"		"#17 2V2 AUTOMIX | ZGAMING.NET"
+			"address"		"cs.zgaming.net:27031"
+			"createdat"		"1795336795"
+			"appid"		"10"
+			"accountid"		"0"
+		}
+	}
+}

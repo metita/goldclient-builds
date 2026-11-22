@@ -2,7 +2,7 @@
 
 Instalador de **Counter-Strike 1.6 GoldClient 2.6.0 (beta)**, listo para jugar:
 
-- instala CS 1.6 vanilla con la configuración por defecto,
+- instala CS 1.6 vanilla con la configuración por defecto y los servidores de ZGaming como favoritos (`installer/serverbrowser_history.vdf`; no pisa config ni favoritos si ya existen),
 - crea el acceso directo en el escritorio (`hl.exe -game cstrike -steam -noforcemparms -forceupdate -beta`),
 - instala Visual C++ x86 solo si la PC no lo tiene.
 

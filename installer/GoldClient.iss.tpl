@@ -44,6 +44,10 @@ pt.InstallingVC=Instalando Visual C++ 2015-2022 (x86)...
 
 [Files]
 Source: "@SRC@\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+; platform\.appcache es una carpeta oculta con el estado del actualizador: sin ella no hay chequeo de updates.
+Source: "@SRC@\platform\.appcache\*"; DestDir: "{app}\platform\.appcache"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "@EXTRA@\config.cfg"; DestDir: "{app}\cstrike"; Flags: onlyifdoesntexist uninsneveruninstall
+Source: "@EXTRA@\serverbrowser_history.vdf"; DestDir: "{app}\platform\config"; Flags: onlyifdoesntexist uninsneveruninstall
 Source: "@REDIST@"; DestDir: "{tmp}"; Flags: deleteafterinstall; Check: NeedsVCRedist
 
 [Dirs]

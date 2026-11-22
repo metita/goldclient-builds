@@ -8,7 +8,8 @@ con `-forceupdate -beta` (su bin\\launcher.dll y platform\\.appcache lo delatan)
 El script:
   1. copia el cliente a una carpeta de trabajo sin tocar el original,
   2. quita todo el estado de usuario (config, favoritos, resolucion, avatar,
-     locales extra, cache) para dejar CS vanilla con valores por defecto,
+     locales extra, cache) para dejar CS vanilla con valores por defecto;
+     config.cfg y los favoritos de ZGaming van aparte (solo si no existen),
   3. genera setup.iss desde GoldClient.iss.tpl y lo compila con Inno Setup 6.
 
 Salida: <out>\\CS16_GoldClient_Setup.exe
@@ -65,11 +66,19 @@ def stage(src, dst):
         p = os.path.join(dst, *f.split('/'))
         if os.path.exists(p):
             os.remove(p)
+    # Archivos de usuario: van aparte y el instalador solo los crea si no existen,
+    # para que reinstalar no pise la config ni los favoritos de nadie.
+    extra = os.path.join(os.path.dirname(dst), 'extra')
+    shutil.rmtree(extra, ignore_errors=True)
+    os.makedirs(extra)
     # config.cfg vanilla = el config_default.cfg que trae el propio juego.
     default = os.path.join(dst, 'cstrike', 'config_default.cfg')
     if not os.path.exists(default):
         fail('falta cstrike/config_default.cfg')
-    shutil.copyfile(default, os.path.join(dst, 'cstrike', 'config.cfg'))
+    shutil.copyfile(default, os.path.join(extra, 'config.cfg'))
+    # Favoritos: los servidores de ZGaming.
+    shutil.copyfile(os.path.join(HERE, 'serverbrowser_history.vdf'),
+                    os.path.join(extra, 'serverbrowser_history.vdf'))
 
 
 def check(dst):
@@ -106,6 +115,7 @@ def main():
     tpl = open(os.path.join(HERE, 'GoldClient.iss.tpl'), encoding='utf-8').read()
     iss = (tpl.replace('@SRC@', work)
               .replace('@OUT@', out)
+              .replace('@EXTRA@', os.path.join(out, 'extra'))
               .replace('@VERSION@', short)
               .replace('@BUILD@', version)
               .replace('@RUN@', RUN_PARAMS)
